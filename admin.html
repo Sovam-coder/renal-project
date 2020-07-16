@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e9e330971.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet1.css">
+    <title>admin</title>
+    <style>
+      body{
+  margin:0;
+  padding:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font:30px Poppins;
+  background: #333;
+}
+
+
+/* E-medicare header */
+.e-medicare{
+  position:absolute;
+  z-index:3;
+  font:bold 3rem "Montserrat";
+  top:-2%;
+  left:40%;
+  background:linear-gradient(45deg,#EE7752,#E73C7E,#23A7D5,#23D5AB);
+  background-size:300%;
+  animation:animate 10s linear infinite;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  pointer-events: none;
+}
+
+@keyframes animate{
+  0%{background-position:0 0;}
+  100%{background-position:300% 0}
+}
+
+@media (max-width:1200px){
+  .e-medicare{
+  top:2%;
+  left:25%;
+  font-size: 5rem;
+  }
+
+  .card-deck div.information{
+      top:80%;
+  }
+
+  .card-deck .information .details{
+    font-size:30px;
+  }
+}
+/* ------------------ */
+
+
+/* Body section */
+.card-deck{
+  width:800px;
+  display:flex;
+  justify-content:space-between;
+  z-index:2;
+  margin-top:18%;
+}
+.card1,.card2{
+  position:relative;
+  z-index:2;
+  width:300px;
+  height:350px;
+  padding:30px;
+  margin-bottom:4%;
+  box-shadow:-10px 25px 50px rgba(0,0,0,0.2);
+  transition:0.5s;
+  background:#fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card1{
+  background-image: url('img/15.png');
+}
+
+.card2{
+  background-image: url('img/14.png' );
+  
+}
+
+h3.content{
+  line-height:1.3;
+  transition: 0.5s;
+  margin-top: 10rem;
+  color:#000;
+  opacity: 0;
+}
+
+.card1:hover,.card2:hover{
+  box-shadow:-20px 50px 50px rgba(0,0,0,0.5);
+}
+
+.card1:hover .content,.card2:hover .content{
+  opacity: 1;
+  color:#eb4559;
+}
+
+.card-deck .background{
+  position:absolute;
+  top:20%;
+  left:0;
+  opacity:1;
+  z-index:0;
+  pointer-events:none;
+  transition:0.5s;
+  background:#fff;
+  width:100%;
+  height:100%;
+}
+
+.card-deck .link1:hover ~.background{
+  opacity:1;
+  background: linear-gradient(#03a9f4,#e91e63);
+}
+
+.card-deck .link2:hover ~.background{
+  opacity:1;
+  background: linear-gradient(#fcbf1e,#cc0e74);
+}
+
+.link1,.link2{
+  text-decoration:none;
+  margin:0;
+  padding:0;
+}
+
+.card-deck .card1:before,.card-deck .card2:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:50%;
+  height:100%;
+  background:rgba(255,255,255,0.2);
+  pointer-events:none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius:20px;
+}
+
+/* ------------------ */
+
+/* Information Section */
+.card-deck .information{
+  position: absolute;
+  z-index: 3;
+  top:103%;
+  left:2%;
+  text-align: center;
+}
+
+.details{
+  font:18px "Poppins";
+}
+
+.card-deck .link1:hover ~.information .details,.card-deck .link2:hover ~.information .details{
+  color:#fff;
+}
+
+/* ------------------ */
+
+
+    </style>
+  </head>
+  <body>
+
+    
+    <!-- header section -->
+    <head>
+      <div class="header">
+        <h3 class="e-medicare">Admin Panel</h3>
+      </div>
+    </head>
+    <!-- body section -->
+    <div class="card-deck">
+      <a href="branch.html">
+        <div class="card1">
+          <h3 class="content">Add Branches</h3>
+        </div>
+      </a>
+
+      <div class="background"></div>
+
+      <a href="astaff.html">
+      <div class="card2">
+          <h3 class="content">Add Staff</h3>
+      </div>
+      </a>
+
+      <div class="background"></div>
+
+      <!-- Content Section -->
+      
+
+    <!-- Footer Section -->
+    </body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" -->
+
+    <!-- Site Metas -->
+    <title>Home</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/faqsstyles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />      
+   
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/scheduleStyle.css">
+ 
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+.body{
+  font-family: Bebas;
+  src:url("./assets/fonts/BebasNeue-Regular.ttf");
+}
+.issues{
+	width: 50%;
+	margin-left: 25%;
+}
+.split {
+  height: auto;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+    width: 50%;
+  left: 0;
+  float: left;
+  padding-left: 5px;
+}
+
+.right {
+  right: 0;
+  padding: 25px;
+}
+
+/*++++++++++++++++++++++++*/
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 5px 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  box-shadow: 15px 15px #ff7300;
+  padding: 16px;
+  text-align: center;
+  border: 5px solid white;
+  background: linear-gradient(75deg, #ff7300, #F9D423);
+  font-family: Circular;
+  src:url("./fonts/CircularStd-Medium.ttf");
+}
+
+@font-face {
+    font-family: Bebas;
+    src:url("./fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face{
+    font-family: Circular;
+    src:url("./fonts/CircularStd-Medium.ttf");
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Bebas;
+}
+.title{
+    letter-spacing: 2px !important;
+    font-size: 40px;
+}
+.navbar{
+      position: fixed;
+      width: 100%;
+      background: #fff !important;
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+      transition: .6s;
+      z-index: 10;
+    }
+
+    
+
+    .navbar-nav{
+      font-family: 'Jost', sans-serif;
+      font-weight: bold;
+    }
+
+    .nav-link{
+      margin-right: 5px;
+    }
+
+    .nav-link:hover{
+      color: orangered !important;
+    }
+
+    nav.sticky{
+      background-color: #fff !important;
+      margin-right: 5px;
+    }
+
+    @media (max-width:768px){
+
+      .navbar{
+        z-index: 10;
+      }
+
+      .navbar-brand .logo-one{
+        margin-left: 5px !important;
+        height: 40px;
+      }
+
+      .icons{
+        margin-bottom: 1rem;
+      }
+
+    }
+
+      /* footer section */
+      footer{
+        background: #000;
+        color: #fff;
+        font-family: 'josefin sans';
+      }
+      .logo2{
+        height:50px; 
+        margin:30px 20px 5px;
+      }
+
+      .content1{
+        margin:20px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #fff;
+        
+      }
+
+      .content2{
+        margin-top: 50px;
+        margin-left: 30px;
+        font-weight: bold;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        display: inline-block;
+        font-family: 'jost';
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
+      .icons{
+        margin-left: 14%;
+        margin-top: 4%;
+      }
+
+      .icons .icon-link{
+        color: #fff;
+        margin-right: 10px;
+      }
+
+      .content3{
+        font-size: 15px;
+      }
+
+      .footer2{
+        background: #333;
+        color: grey;
+        padding: 3px;
+        text-align: center;
+        font-family: 'josefin sans';
+      }
+    </style>
+</head>
+<body >
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img class="logo-one" src="img/renal.png" alt="logo one" >
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Actors Panel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html"></a>
+            </li>
+           
+           
+            
+            
+            
+        </ul>
+      </div>
+    </nav>
+<!------------------------------------------------------------>
+<br><br><br><br>
+
+<!-- Corousel -->
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="10000">
+      <img src="img/use4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="2000">
+      <img src="img/use2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/use3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/use1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/use5.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<!-- About page -->
+<div class="section margin-top_50" id="schedule">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="full">
+              <img src="img/6.png" alt="#" height="500px">
+              
+          </div>
+        </div>
+      <div class="col-md-6 layout_padding_2">
+              <div class="full">
+                <h1 class="title is-2  lg:text-left sm:text-left  mb-2  "><font color="#343232 "> <b>The Renal Project™  </b></font></h1>
+                <img src="img/6.png" width="1  " height="7">
+              </div>
+              <div class="full">
+                <p style="text-align: justify;text-justify: inter-word; font-family: Circular;"><b>
+                  <br>
+                  A Mumbai based company started with the mission to revolutionize the availability and accessibility of dialysis therapy to the ever-increasing population of kidney patients.
+
+The Renal Project plans to open around 500 micro-centers across India in order to penetrate the landscape that needs it.<br>
+                  
+                  
+                <a class="hvr-radial-out button-theme" href="https://www.therenalproject.com" style="background-color: #ff7300;">KNOW MORE</a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+<!------------------------------------------------------------>
+<div class="section margin-top_50">
+  <div class="container">
+      <div class="row">
+      <div class="col-md-6 layout_padding_2">
+              <div class="full">
+                <h1 class="title is-2  lg:text-left sm:text-left  mb-2  "><font color="#343232 "> <b>Services</b></font></h1>
+               
+              </div>
+              <div class="full">
+              <p style="text-align: justify;text-justify: inter-word; font-family: Circular;"><b>We fully understand that Chronic Kidney Disease and the treatment such as hemodialysis takes a lot out of the patient and the family. It is physically, emotionally, and financially a draining experience.
+
+                We employ the best technicians who are hand picked through rigorous questions and also practical test only to ensure that they can meet the expected level of patient care that The Renal Project™ promises.</b><br>
+                <a class="hvr-radial-out button-theme" href="https://www.therenalproject.com/" style="background-color: #ff7300;">KNOW  MORE</a>
+                </p>
+              </div>
+          </div>
+        <div class="col-md-6">
+          <div class="full">
+              <img src="img/7.png" alt="#" style="vertical-align:middle;" />
+              
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+  <!------------Prizes & Rewards Image ------------->
+ 
+<!-----------------------------Rewards Section Started---------------------------------------------------------------------------------------->
+
+ <!-----------------------><!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++===-->
+  
+     <div class="container-fluid bg-3 text-center" >   
+        <div class="full">
+            <div class="heading_main text_align_center">
+               <h1 class="title is-2  lg:text-left sm:text-left  mb-2  "><font color="#343232 "> <b>Our Pledge</b></font></h1>
+                
+            </div>
+          </div>
+    <div class="column">
+<font size="5px" color="#ff7300">Build a Dialysis Center </font>    
+                <p style="text-align: justify;text-justify: inter-word; font-family: Circular;"><font color="black"><b>Give us CONTRACT of Creating a Dialysis Centre to your specifications. We provide TURNKEY PROJECTS with Hassle-Free Hand over with a streamlined process flow from gathering your User Requirements to Planning to Execution To the First patient entering the facility. We assure most COST-EFFECTIVE Procurement and SUPPLY CHAIN partners<br><br>
+                
+            </div>
+  </div>
+
+
+<div class="column">
+            <font size="5px" color="ff7300"><center>Operate a Dialysis Center</center></font>
+            <p style="text-align: justify;text-justify: inter-word; font-family: Circular;"><font color="black" ><b>The Renal Project™ works in a ISO 9001: 2015 framework of operations. Our simplified and standardized SOPS include inventory management, quarterly management reviews, audits, preventive maintenance, training, record keeping, environmental controls and customer feedback redressal Our young and highly skilled team if accountable, hard working, and provide best patient care through a well defined job description and set expectation<br><br>
+            
+</div>
+<div class="column">
+</b>
+<font size="5px" color="ff7300"><center><b>Consult</b></center></font>
+            <p style="text-align: justify;text-justify: inter-word; font-family: Circular;"><font color="black" ><b>Get your dialysis facility and operations audited under the lens of ISO 9001:2015 and EMS concepts for best patient care, least wastage, and best patient care.<br><br>
+            
+</div>
+     
+<!--++++++++++++++++++++++++++++++++ How Does it Work ?? +++++++++++++++++++++++++++++++++++++++++++++++++++++++++===-->
+
+
+  <div class="container-fluid bg-3 text-center" >   
+        <div class="full">
+            <div class="heading_main text_align_center">
+         <h1 class="title is-2  lg:text-left sm:text-left  mb-2  "><font color="#343232 "> <b> Quality Policy </b></font></h1>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <p><font color="black"><center><strong><h1><b><font color="black">
+            <img src="img/9.png" width="150" height="150"><br>
+            A P P L Y</font></b></h1></strong></center>
+            Compassion and Care for each patient and kin.</font></p>
+            <hr style="background-color: black; height: 1px; width: 200px;">
+        </div>
+        <div class="col-sm-4">
+            <p><font color="black"><center><strong><h1><b><font color="black">
+            <img src="img/10.png" width="150" height="150"><br>
+            C O D E</font></b></h1></strong></center>Clean and safe environment for patients and kin</font></p><hr style="background-color: black; height: 1px; width: 200px;">
+        </div>
+        <div class="col-sm-4"> 
+            <p><font color="black"><center><strong><h1><b><font color="black">
+            <img src="img/11.png" width="150" height="150"><br>
+            S H A R E</font></b></h1></strong></center>Continuous improvement to make life better for our patients and personnel</font></p>
+            <hr style="background-color: black; height: 1px; width: 200px;">
+        </div>
+        <div class="issues">
+            <p style="text-align: center;text-justify: inter-word; font-family: Circular;"><font color="black" >Culture of efficient use and functioning of resources as an organization
+              A Mumbai based company started with the mission to revolutionize the availability and delivery of dialysis therapy to the ever-increasing population of kidney patients.
+
+The Renal Project plans to open micro-centers across India in order to penetrate the landscape that needs it.<b>
+           </b></font></p>
+        </div>
+      </div>
+    </div> <hr style="background-color: orange; height: 2px; width: 500px;">
+
+
+
+    
+
+<!--------------------------------->
+    <!-- Start Footer -->
+  <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <a href="#">
+                <img class="logo2" src="img/renal1.png" alt="logo two">
+              </a>
+              <p class="content1" style = "color: #fff">
+                The Renal Project™ is a Mumbai based company started with the mission to revolutionize the availability 
+              </p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <h6 class="content2">SOCIAL MEDIA</h6>
+              <div class="icons">
+                <a class="icon-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="icon-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="icon-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="icon-link" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><br>
+                <i class="fa fa-envelope" aria-hidden="true"><span style="font-family: 'josefin sans';"> shashank@therenalproject.com</span></i>
+                
+ +91 95607 86456
+  
+              </div><br>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="footer2">The Renal Project 
+          &copy;2020 <span style="font-family: 'jost';">2019 All Rights Reserved. </span>
+         
+        </div>
+      </div>
+    </footer>
+
+     <!-- faqs script -->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".accordion-link").click(function(){
+            if($(this).next(".answer").hasClass("active")){
+              $(this).next(".answer").removeClass("active").slideUp()
+            $(this).children("span").removeClass("fa-minus").addClass("fa-plus")
+
+            }
+
+
+
+            else{
+            $(".card .answer").removeClass("active").slideUp()
+            $(".card .accordion-link span").removeClass("fa-minus").addClass("fa-plus");
+            $(this).next(".answer").addClass("active").slideDown()
+            $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+            }
+          })
+        })
+    </script>
+    <!-- Custom Javascript -->
+    <script>
+      window.addEventListener('scroll', function(){
+        var navbar = document.querySelector('nav');
+        navbar.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+    <!-- End Footer -->
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+</b>
+</body>
+
+</html>
